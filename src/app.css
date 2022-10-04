@@ -650,7 +650,7 @@ div#hide {
   width: 80%;
 }
 .percent-container span:nth-child(1) {
-  margin-left: 15%;
+  margin-left: 40%;
 }
 
 .percent-container span:nth-child(2) {
@@ -659,6 +659,19 @@ div#hide {
 }
 .percent-container span:nth-child(4) {
   margin-left: 6%;
+}
+.discount-mid h3 {
+  font-size: 20px;
+
+}
+.discount-mid h4 {
+  font-size: 30px;
+  color: #333333;
+}
+
+.percent-container span {
+  font-size: 15px;
+  margin-top: -18px;
 }
 
 }
