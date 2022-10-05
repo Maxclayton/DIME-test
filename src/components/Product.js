@@ -57,6 +57,9 @@ class Product extends Component {
     });
   }
 
+  myFunction() {
+    this.props.classToggle()
+  }
   render() {
     let variantImage = this.state.selectedVariantImage || this.props.product.images.edges[0].node.src
     let variant = this.state.selectedVariant || this.props.product.variants.edges[0].node
@@ -70,7 +73,7 @@ class Product extends Component {
         <div className='Product-bottom-half'>
           <h5 className="Product__title">{this.props.product.title}</h5>
           <span className="Product__price">${variant.price}</span>
-          <button className="Product__buy button" onClick={() => this.props.addVariantToCart(variant.id, variantQuantity) }>Add to Bundle</button>
+          <button className="Product__buy button" onClick={() => { this.props.addVariantToCart(variant.id, variantQuantity); }  }>Add to Bundle</button>
 
 
         </div>

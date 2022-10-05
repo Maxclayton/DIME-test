@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import { graphql } from 'react-apollo';
 import {flowRight as compose} from 'lodash';
 import gql from 'graphql-tag';
+import Add from './components/Add';
 import {
   createCheckout,
   checkoutLineItemsAdd,
@@ -77,6 +78,7 @@ class App extends Component {
 
     return (
       <div className="App">
+        <Add />
         <div className="Flash__message-wrapper">
           <p className={`Flash__message ${this.state.accountVerificationMessage ? 'Flash__message--open' : ''}`}>We have sent you an email, please click the link included to verify your email address</p>
         </div>

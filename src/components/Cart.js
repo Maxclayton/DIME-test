@@ -12,8 +12,16 @@ class Cart extends Component {
   classToggle = () => {
     this.setState({
         close: !this.state.close,
+      
     });
 };
+
+// priceState = () => {
+//   this.props.setState({
+//       totalPrice: 34,
+//   });
+//   console.log(this.props.checkout.totalPrice)
+// };
 
   
   render() {

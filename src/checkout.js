@@ -110,7 +110,7 @@ export function addVariantToCart(variantId, quantity){
       checkout: res.data.checkoutLineItemsAdd.checkout
     });
   });
-
+ 
 }
 
 export function updateLineItemInCart(lineItemId, quantity){
